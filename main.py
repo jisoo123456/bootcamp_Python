@@ -1,7 +1,17 @@
-#6.1
+#6.2
 
-list=[]
-for i in range(3,-1,-1):
-    list.append(i)
+guess_me=7
+number=1
 
-print(list)
+while True:
+    if guess_me>number:
+        print("too low")
+        number=number+1
+
+    elif guess_me<number:
+        print("oops")
+        number=number+1
+
+    else:
+        print('found it')
+        break
