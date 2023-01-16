@@ -1,9 +1,7 @@
-#5.8
+#6.1
 
-D='Duck'
-G='Groud'
-S='Sqitz'
-print(f"{D}y Mc{D}face")
-print(f"{G}y Mc{G}face")
-print(f"{S}y Mc{S}face")
+list=[]
+for i in range(3,-1,-1):
+    list.append(i)
 
+print(list)
