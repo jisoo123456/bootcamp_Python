@@ -1,9 +1,8 @@
-#6.2
-
-guess_me=7
+#6.3
+guess_me=5
 number=1
 
-while True:
+for i in range(1,11):
     if guess_me>number:
         print("too low")
         number=number+1
