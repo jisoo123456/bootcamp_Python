@@ -1,10 +1,16 @@
-#5.1(m으로 시작하는 단어를 대문자로)
+#5.2(다음과 같은 형식으로 각 리스트의 질문과 답 출력)
 
-song="""when an eel grabs your arm,
-...And it causes great harm,
-...That's a moray!"""
+question=[
+    "We don't serve strings around here. Are you a string",
+    "What is said on Father's Day in the forest?",
+    "What makes the sound 'Sis!' 'Boom!' 'Bah!'?"
+]
 
-song_list=song.split()
-song_list[13]=(song_list[13]).title()
-Song=' '.join(song_list)
-print(Song)
+answers=[
+    "An exploding sheep.",
+    "No, I'm a frayed knot.",
+    "'Pop!' goes the weasel."
+]
+
+for i in range(0, len(question)):
+    print(question[i], answers[i])
