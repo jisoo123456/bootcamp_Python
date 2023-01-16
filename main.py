@@ -1,12 +1,12 @@
-#5.4
+#5.5
 
 letter=['salutation','name','prodcut','verbed','room','animals','amount','percent','spokesman','job_title']
 
-print(f'''Dear {letter[0]}{letter[1]}\n\nThank you for your letter. 
-We are sorry that our {letter[2]} {letter[3]} in your {letter[4]} Please note that it should never be used in a {letter[4]}, 
-especially near any {letter[5]}.\n\nSend us your receipt and {letter[6]} for shipping and handling.
-We will send you another {letter[2]} that, in out tests, is {letter[7]} less likely to have {letter[4]}.
-\n\nThank you for your support.\nSincerly,\n{letter[8]},\n{letter[9]}''')
+print('''Dear {0}{1}\n\nThank you for your letter. 
+We are sorry that our {2} {3} in your {4} Please note that it should never be used in a {5}, 
+especially near any {6}.\n\nSend us your receipt and {7} for shipping and handling.
+We will send you another {8} that, in out tests, is {9} less likely to have {10}.
+\n\nThank you for your support.\nSincerly,\n{11},\n{12}'''.format(letter[0],letter[1],letter[2],letter[3],letter[4],letter[4],letter[5],letter[6],letter[2],letter[7],letter[4],letter[8],letter[9]))
 
 
 
