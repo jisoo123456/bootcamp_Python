@@ -1,17 +1,10 @@
-#입력된 두 수 사이의 소수 출력
+#5.1(m으로 시작하는 단어를 대문자로)
 
-start=int(input('start number: '))
-end=int(input('end number: '))
+song="""when an eel grabs your arm,
+...And it causes great harm,
+...That's a moray!"""
 
-if end<start:
-    start, end= end, start
-
-for i in range(start, end+1):
-
-    if i <=1:
-        continue
-    for k in range(2,i):
-        if i%k ==0:
-            break
-    else:
-        print(i, end=' ')
+song_list=song.split()
+song_list[13]=(song_list[13]).title()
+Song=' '.join(song_list)
+print(Song)
