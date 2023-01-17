@@ -1,4 +1,14 @@
-#8.10
+#8.6~8.9
 
-squares = {number: number**2 for number in range(1,11)}
-print(squares)
+animals = {'cats': 'Henry', 'octopi': 'Grumpy', 'emus': 'Lucy'}  #8.6
+life = {'animals': ' ', 'plants': ' ', 'other': ' '}
+
+life['animals'] = animals
+
+print(life)
+
+print(list(life))  #8.7
+
+print(life['animals'].items())  #8.8
+
+print(life['animals']['cats'])  #8.9
