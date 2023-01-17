@@ -1,16 +1,18 @@
-#6.3
-guess_me=5
-number=1
+#tuple
+a='harry',
+b=('harry',)
+c=()  #empty tuple
+d='harry','ron'  #packing
+e=('hermione')  #string
+f=('harry','ron')  #packing
+print(f[1])
 
-for i in range(1,11):
-    if guess_me>number:
-        print("too low")
-        number=number+1
+x, y=f  #unpacking
+print(y)
 
-    elif guess_me<number:
-        print("oops")
-        number=number+1
-
-    else:
-        print('found it')
-        break
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
