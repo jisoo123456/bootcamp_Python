@@ -1,3 +1,9 @@
-#7.3
-year_lists = [2002, 2003, 2004, 2005, 2006]
-print(max(year_lists))
+#7.4~7.7
+things = ['mozzarella', 'cinderella', 'salmonella']
+things[1] = things[1].title()  #7.5
+things[0] = things[0].upper()  #7.6
+#7.7
+#things.pop()
+#things.remove('salmonella')
+del things[2]
+print(things, type(things))
