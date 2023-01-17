@@ -1,15 +1,13 @@
-#7.11
-start1 = ['fee', 'fie', 'foe']
-rhymes = [
-    ('floap', 'get a mop'),
-    ('floap', 'turn the roap'),
-    ('fa', 'get your ma'),
-    ('fudge', 'call the judge'),
-    ('fat', 'pet the cat'),
-    ('fog', 'walk the dog'),
-    ('fun', "say we're done")
-]
-start2 = "Someone better!"
+#8.1~8.5
 
-print(start1[0].title()+'!', start1[1].title()+'!', start1[2].title()+'!', rhymes[0][0].title()+'!')
-print(start2, rhymes[0][1]+'.')
+e2f = {"dog": "chien", "cat": "chat", "walrus": "morse"}  #8.1
+print(e2f, type(e2f))
+print(e2f["walrus"])  #8.2
+
+f2e = {a: b for b, a in e2f.items()}  #8.3
+print(f2e)
+
+print(f2e['chien'])  #8.4
+
+print(list(e2f))  #8.5
+
