@@ -1,14 +1,20 @@
-#8.6~8.9
+def isprime(n):
+    if n <= 1:
+        return False
 
-animals = {'cats': 'Henry', 'octopi': 'Grumpy', 'emus': 'Lucy'}  #8.6
-life = {'animals': ' ', 'plants': ' ', 'other': ' '}
+    for k in range(2, n):
+        if n % k == 0:
+            return False
 
-life['animals'] = animals
+    else:
+        return True
 
-print(life)
+start = int(input("input start number:"))
+end = int(input("input end number:"))
 
-print(list(life))  #8.7
+if end < start:
+    start, end = end, start
 
-print(life['animals'].items())  #8.8
-
-print(life['animals']['cats'])  #8.9
+for i in range(start, end+1):
+    if isprime(i):
+        print(i, end=' ')
