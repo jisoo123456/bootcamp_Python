@@ -1,20 +1,5 @@
-def isprime(n):
-    if n <= 1:
-        return False
+mamamoo = ['화사', '솔라', '휘인', '문별']
+#print(mamamoo.pop())
+print(mamamoo.remove('문별'))  #return기능이 없기 때문
 
-    for k in range(2, n):
-        if n % k == 0:
-            return False
-
-    else:
-        return True
-
-start = int(input("input start number:"))
-end = int(input("input end number:"))
-
-if end < start:
-    start, end = end, start
-
-for i in range(start, end+1):
-    if isprime(i):
-        print(i, end=' ')
+print(mamamoo)
