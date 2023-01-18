@@ -1,3 +1,5 @@
-# 8.11
-a_set = {number for number in range(10) if number % 2 != 0}
-print(a_set)
+# 8.12
+a = (number for number in range(10))
+
+for i in a:
+    print(f'Got{i}')
