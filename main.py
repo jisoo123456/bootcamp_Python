@@ -1,6 +1,7 @@
-#8.13
-a_key = ('optimist', 'pessimist', 'troll')
-a_value = ('The glas is half full', "The glass is half empty", 'How did you get a glass')
+# 8.14
+titles = ['Creature of Habit', 'Crewel Fate']
+plots = ['A nun turns into a mon ster', 'A haunted yarn shop']
 
-a_dict = dict(zip(a_key, a_value))
+a_dict = dict(zip(titles, plots))
 print(a_dict)
+
