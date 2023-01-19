@@ -1,13 +1,21 @@
-# 9.2
-def get_odds():
-    for numb in range(10):
-        if numb % 2 != 0:
-            yield numb
+# 9.3
+def test(func):
+    def test_a(*args, **kwargs):
+        print('start')
+        result = func(*args, **kwargs)
+        print(result)
+        print('end')
+        return result
+    return test_a
 
-a = get_odds()
+@test
+def plus(a, b):
+    return a + b
 
-count = 0
-for i in get_odds():
-    count = count +1
-    if count == 3:
-        print(i)
+plus(3, 4)
+
+@test
+def minus(a, b):
+    return a -b
+
+minus(5, 2)
