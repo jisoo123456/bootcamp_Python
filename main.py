@@ -1,11 +1,10 @@
-cnts = 0  #for문 안에 cnts를 넣으면 반복문이 돌때마다 0으로 초기화가 됨.
-def get_odds():
-    for num in range(10):
-        if num % 2 == 1:
-            yield num  #yied가 아닌 return을 써버리면 1만 return 받고 끝나서 odds는 정수가 됨.
+groups = {
+    '빅뱅' : ['GD', '태양', '탑', '대성', '승리'],
+    '마마무' : ['문별', '솔라', '휘인', '화사']
+}
 
-odds = get_odds()
-for i in odds:
-    cnts = cnts + 1
-    if cnts == 3:
-        print(i)
+for group, members in groups.items():
+    print(f'{group}의 멤버')
+    for member in members:
+        if member != '승리':
+            print(member)
