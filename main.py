@@ -1,21 +1,16 @@
-# 9.3
-def test(func):
-    def test_a(*args, **kwargs):
-        print('start')
-        result = func(*args, **kwargs)
-        print(result)
-        print('end')
-        return result
-    return test_a
+# 9.4
 
-@test
-def plus(a, b):
-    return a + b
+class OopseException(Exception):
+    pass
 
-plus(3, 4)
+# 1)
+try:
+    raise OopseException('caught an oops')
+except OopseException as err:
+    print(err)
 
-@test
-def minus(a, b):
-    return a -b
-
-minus(5, 2)
+# 2)
+try:
+    raise OopseException()  #()있어도 되고 없어도 가능
+except OopseException:
+    print('caught an oops')
