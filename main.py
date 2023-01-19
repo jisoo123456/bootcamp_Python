@@ -1,27 +1,11 @@
-#def div_calc(a, b):
-#   """
-#    나누기 함수
-#    :param a:분자
-#    :param b: 분모
-#    :return: 계산결과
-#    """
+cnts = 0  #for문 안에 cnts를 넣으면 반복문이 돌때마다 0으로 초기화가 됨.
+def get_odds():
+    for num in range(10):
+        if num % 2 == 1:
+            yield num  #yied가 아닌 return을 써버리면 1만 return 받고 끝나서 odds는 정수가 됨.
 
-#    return a/b
-
-try:
-    #raise '쉬는 시간!'
-    raise Exception('쉬는시간')
-    expr = input('분자 분모 입력(띄어쓰기로 구분): ').split()
-    print(int(expr[0]) / int(expr[1]))
-except ValueError as err:
-    print(f'숫자를 입력해주세요.({err})')
-except ZeroDivisionError as err:
-    print(f'분모에 0이 올 수 없습니다.({err})')
-except IndexError as err:
-    print(f'입력 값의 범위에 문제가 있습니다.({err})')
-except Exception as other:
-    print(f'예외발생:{other}')
-else:  #예외가 발생하지 않았을 때
-    print('프로그램 정상', end = '')
-finally:  #예외 발생 여부와 상관 없이 무조건 실행
-    print('종료')
+odds = get_odds()
+for i in odds:
+    cnts = cnts + 1
+    if cnts == 3:
+        print(i)
